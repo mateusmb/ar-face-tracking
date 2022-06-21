@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+
+ import "mind-ar/dist/mindar-face.prod.js";
+ import "aframe";
+ import "mind-ar/dist/mindar-face-aframe.prod.js";
+
+import "./App.css";
+import MindARViewer from "./components/MindARViewer";
 
 function App() {
+  const [started, setStarted] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Face tracking</h1>
+
+    
+        <div className="container">
+          <MindARViewer />
+          <video></video>
+        </div>
+     
     </div>
   );
 }
