@@ -4,6 +4,7 @@ import searchImage from '../../images/target.png'
 import Glasses1 from '../../assets/models/glasses1.json';
 import Glasses2 from '../../assets/models/glasses2.json';
 import Glasses3 from '../../assets/models/glasses3Textured.json';
+import Glasses4 from '../../assets/models/Oculos_baked.json';
 
 function init_VTOWidget(placeHolder, canvas, toggleLoading){
   JEELIZVTOWIDGET.start({
@@ -113,12 +114,13 @@ function AppCanvas(props){
       </div>
 
       <div ref={refChangeModel} className='JeelizVTOWidgetControls JeelizVTOWidgetChangeModelContainer'>
-        <button className='JeelizVTOWidgetButton' onClick={set_glassesModel.bind(this, 'rayban_aviator_or_vertFlash')}>Model 1</button>
+        {/* <button className='JeelizVTOWidgetButton' onClick={set_glassesModel.bind(this, 'rayban_aviator_or_vertFlash')}>Model 1</button>
         <button className='JeelizVTOWidgetButton' onClick={set_glassesModel.bind(this, 'rayban_round_cuivre_pinkBrownDegrade')}>Model 2</button>
-        <button className='JeelizVTOWidgetButton' onClick={set_glassesModel.bind(this, 'carrera_113S_blue')}>Model 3</button>
+        <button className='JeelizVTOWidgetButton' onClick={set_glassesModel.bind(this, 'carrera_113S_blue')}>Model 3</button> */}
         <button className='JeelizVTOWidgetButton' onClick={set_glassesJSONModel.bind(this, Glasses1)}>Model 4</button>
         <button className='JeelizVTOWidgetButton' onClick={set_glassesJSONModel.bind(this, Glasses2)}>Model 5</button>
         <button className='JeelizVTOWidgetButton' onClick={set_glassesJSONModel.bind(this, Glasses3)}>Model 6</button>
+        <button className='JeelizVTOWidgetButton' onClick={set_glassesJSONModel.bind(this, Glasses4)}>Model Baked</button>
       </div>
 
       <div ref={refLoading} className='JeelizVTOWidgetLoading'>
