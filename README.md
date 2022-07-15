@@ -1,5 +1,7 @@
 # Face Tracking com JeelizVTO
 
+![Glasses try on](https://media.giphy.com/media/87X2bfwa5gmPjVwLQq/giphy.gif)
+
 Face tracking em React utilizando Jeeliz VTO widget [NPM jeelizvtowidget package](https://www.npmjs.com/package/jeelizvtowidget).
 
 ## Executando
